@@ -6,6 +6,10 @@ body {
   background-color: #E7ECEF;
 }
 
+.key-tile {
+  background-color: #fff;
+}
+
 #title {
   font-size: 36px;
   font-weight: bold;
