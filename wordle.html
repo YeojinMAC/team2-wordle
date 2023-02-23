@@ -1,60 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>      
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Wordle Game</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wordle Game</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
 
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <main> 
-            <div class="container">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12">
+            <br />
+            <h1 id="title">WORDLE</h1>
+              <div id="congratulationsGif"></div>
+              <div id="board"></div>
+            <p id="notInWordList">Um.. still not there yet. Try another one.</p>
+            <h6 id="answer"></h6>
+          </div>
+            
+          <div id="keyBoard"></div>
+          
+          <div>
+            <button id="giveUpBtn" class="btn-secondary">
+              GIVE UP
+            </button>
+          </div>
 
-                <div class="row">
-                  <div class="col-1">
-                    <br>
-                  </div>
-                  <div class="col-10">
+
+          <div class="container">
+            <div class="rules">
+              <div class="row">
+
+                <div class="col-sm">
+                  <div class="col">
                     <div class="row">
-                        <div class="col-12">
-                            <br>
-                            <h1 id="title">Wordle</h1>
-                            <div id="congratulationsGif"></div>
-                            <div id="board">
-                            </div>
-                            <p id="notInWordList">Not in word list</p>
-                            <br>
-                            <h1 id="answer"></h1>
-                        </div>
-                        <div id="keyBoard"></div>
-                        <button id="giveUpBtn">Give Up</button>
-                        <div class="col-12 instructions" id="gameInstructions">
-                                <p>How to play Wordle</p>
-                                <p>Guess the Wordle in 6 tries.</p>
-                                <p>Each guess must be a valid 5-letter word.</p>
-                                <p>The color of the tiles will change to show how close your guess was to the word.</p>
-                                <br>
-                                <p> - <span>Green</span>: The letter is in the word and the proper position.</p>
-                                <p> - <span>Yellow</span>: The letter is in the word but in the wrong place.</p>
-                                <p> - <span>Grey</span>: The letter is not in the word.</p>
-                        </div>
-                        <div id="playAgainBtn">
-
-                        </div>
+                      <div class="col">
+                        Rules
+                      </div>
+                      <div class="col-6">
+                        Guess the WORDLE in 6 tries. After each guess, the colour of the tiles will change to show how close your guess was to the word.
+                      </div>
                     </div>
                   </div>
-                    <div class="col-1">
-                        <br>
-                    </div>
                 </div>
 
+                <div class="col-sm">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col">
+                        Rules
+                      </div>
+                      <div class="col-6">
+                        Letter in the word and in correct position
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-sm">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col">
+                        Rules
+                      </div>
+                      <div class="col-6">
+                        Letter in the word but incorrect position
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="col-sm">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col">
+                        Rules
+                      </div>
+                      <div class="col-6">
+                        Letter not in the word
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-        </main>  
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
+          </div>
+
+            <div id="playAgainBtn"></div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous">
+    </script>
+  
+  </body>
 </html>
