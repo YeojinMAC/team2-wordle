@@ -39,19 +39,22 @@ body {
 }
 
 .correct {
-  background: url("images/pattern-checker.png") no-repeat fixed centers;
+  background: url("images/pattern-checker.png");
+  background-size: 60px;
   background-color: #61D7B8;
   border-color: #E7ECEF;
 }
 
 .present {
-  background: url("images/pattern-plus.png") no-repeat fixed centers;
+  background: url("images/pattern-plus.png");
+  background-size: 60px;
   background-color: #FCCF2E;
   border-color: #E7ECEF;
 }
 
 .absent {
-  background: url("images/pattern-zigzag.png") no-repeat fixed centers;
+  background: url("images/pattern-zigzag.png");
+  background-size: 60px;
   background-color: #C3CFDF;
   border-color: #E7ECEF;
 }
@@ -142,6 +145,81 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #274C77;
-  margin-top: 100px;
+  margin-top: 120px;
   background: #fff;
+  padding: 24px;
+}
+
+.instruction-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #274C77;
+  text-align: left;
+}
+
+.instruction-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #274C77;
+  text-align: left;
+  /* padding-left: 8px; */
+}
+
+.instruction-letter1 {
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  text-align: center;
+  width: 54px;
+  height: 52px;
+  background: url(images/pattern-checker.png), #61D7B8;
+  background-size: 80px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.instruction-letter2 {
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  text-align: center;
+  width: 54px;
+  height: 52px;
+  background: url(images/pattern-plus.png), #FCCF2E;
+  background-size: 60px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.instruction-letter3 {
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  text-align: center;
+  width: 54px;
+  height: 52px;
+  background: url(images/pattern-zigzag.png), #C3CFDF;
+  background-size: 60px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
 }
