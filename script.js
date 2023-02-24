@@ -147,9 +147,16 @@ function update() {
   guess = guess.toLowerCase(); //case sensitive
 
   if (!guessList.includes(guess)) {
-    document.getElementById("answer").innerText = "Oops! Try again!";
-    removeError();
-    return;
+    if (guess.length<5){
+      document.getElementById("answer").innerText = "Not enough letters";
+      removeError();
+      return;
+    }
+    else{
+      document.getElementById("answer").innerText = "Not a word. Try again!";
+      removeError();
+      return;
+    }
   }
 
   //start processing guess
@@ -185,6 +192,7 @@ function update() {
 
     if (correct == width) {
       success();
+      gameOver= true;
     }
   }
 
