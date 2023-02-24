@@ -147,7 +147,7 @@ function update() {
   guess = guess.toLowerCase(); //case sensitive
 
   if (!guessList.includes(guess)) {
-    document.getElementById("answer").innerText = "Oops doesn't make sense. Try again!";
+    document.getElementById("answer").innerText = "Oops! Try again!";
     removeError();
     return;
   }
