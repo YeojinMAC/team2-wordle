@@ -1,0 +1,11 @@
+<div class="player">
+                <audio id="audio">
+                    <source src="media/dmx_var1.mp3" type="audio/mpeg">
+                </audio>
+            
+                <button id="playPauseBTN" onclick="playPause()">Play</button>
+            
+                <button onclick="stop()">Stop</button>
+            </div>
+            
+<script src="music_code.js"></script>
