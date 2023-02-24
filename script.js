@@ -13173,17 +13173,3 @@ function removeError() {
     document.getElementById("answer").innerText = "";
   }, 5000);
 }
-
-
-//Wordle letter-flipping animation starts
-// function applyFlip() {
-//   var tiles = document.getElementsByClassName("innerHTML");
-//   var tilesArray = Array.from(tiles);
-//   tilesArray.map(function (tile, i) {
-//     tile.classList.add("flip");
-//     tile.style.animationDelay = `${i * 100}ms`;
-//   });
-// }
-// var flipper = document.getElementById("flipper");
-// flipper.addEventListener("click", applyFlip);
-//Wordle letter-flipping animation ends
